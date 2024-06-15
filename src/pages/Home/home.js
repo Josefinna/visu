@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <div>
       <header className="mb-4">
-        <nav className="navbar navbar-expand-lg bg-secondary-subtle">
+        <nav className="navbar">
           <div className="container-fluid">
             <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
               <i className="fa-solid fa-bars"></i>

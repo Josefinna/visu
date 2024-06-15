@@ -6,21 +6,9 @@ body {
     padding: 0;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  
-  h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #343a40;
-  }
-  
-  /* Header and Navigation */
-  header {
-    background-color: #e9ecef;
+  /* Navbar Styles */
+  .navbar {
+    background-color: #9542FF; /* Cambiar el color de fondo del navbar */
   }
   
   .navbar-brand img {
