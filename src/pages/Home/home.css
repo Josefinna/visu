@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  /* Header and Navigation */
+  header {
+    background-color: #e9ecef;
+  }
+  
+  .navbar-brand img {
+    max-width: 100px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .offcanvas {
+    width: 250px;
+  }
+  
+  .offcanvas-header .btn-close {
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link {
+    color: #343a40;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .nav-link.active {
+    color: #007bff;
+    font-weight: 700;
+  }
+  
+  .navbar .rounded-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Search Section */
+  #search {
+    padding: 20px 0;
+  }
+  
+  #search .form-control {
+    border-right: none;
+  }
+  
+  #search .btn-secondary {
+    border-left: none;
+  }
+  
+  #search .btn-secondary .fa-sliders {
+    font-size: 1.2em;
+  }
+  
+  /* Populares Section */
+  #pop {
+    padding: 40px 0;
+  }
+  
+  .owl-carousel .item {
+    margin: 5px;
+  }
+  
+  .owl-carousel .item a {
+    text-decoration: none;
+  }
+  
+  .owl-carousel .item .p-5 {
+    padding: 40px;
+  }
+  
+  .owl-carousel .fa-image {
+    font-size: 2em;
+  }
+  
+  /* My Adventures Section */
+  #my-adventures {
+    padding: 40px 0;
+  }
+  
+  #my-adventures .col-6 {
+    margin-bottom: 20px;
+  }
+  
+  #my-adventures .p-5 {
+    padding: 40px;
+  }
+  
+  #my-adventures .fa-circle-plus {
+    font-size: 2em;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #e9ecef;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Offcanvas Filters */
+  #offcanvasFilters .offcanvas-header {
+    padding-bottom: 0;
+  }
+  
+  #offcanvasFilters .offcanvas-body {
+    padding-top: 0;
+  }
+  
+  #offcanvasFilters .form-select,
+  #offcanvasFilters .form-check-input {
+    margin-bottom: 20px;
+  }
+  
+  #slider-range {
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  .btn-secondary .fa-arrow-right {
+    margin-left: 10px;
+  }
+  
