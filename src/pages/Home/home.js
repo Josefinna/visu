@@ -1,18 +1,19 @@
+// src/Home/home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
- 
-// Encabezado
+import './home.css';
+
 function Header() {
   return (
     <header className="mb-4">
       <nav className="navbar navbar-expand-lg bg-secondary-subtle">
         <div className="container-fluid">
           <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
-            <i className="fa-solid fa-bars"></i>
+            <i className="fa fa-bars"></i>
           </button>
           <Link className="navbar-brand d-inline-block w-25" to="#"><img src="images/logo_dise.png" className="w-100" alt="Logo" /></Link>
           <div className="rounded-circle bg-secondary p-3">
-            <i className="fa-solid fa-user text-white"></i>
+            <i className="fa fa-user text-white"></i>
           </div>
           <div className="offcanvas offcanvas-start" id="offcanvas-navbar">
             <div className="offcanvas-header p-3">
@@ -47,15 +48,12 @@ function Header() {
     </header>
   );
 }
- 
-// Define el componente de la página principal (HomePage)
+
 function HomePage() {
   return (
     <div>
-      {/* Encabezado */}
       <Header />
- 
-      {/* Sección Popular */}
+
       <section id="pop" className="mt-5">
         <div className="container">
           <div className="row">
@@ -67,47 +65,45 @@ function HomePage() {
                 <div className="item">
                   <Link to="/popular" className="text-black">
                     <div className="p-5 rounded bg-secondary-subtle text-center">
-                      <i className="fa-solid fa-image fs-1"></i>
+                      <i className="fa fa-image fs-1"></i>
                     </div>
                   </Link>
                 </div>
-                {/* Otros elementos */}
               </div>
             </div>
           </div>
         </div>
       </section>
- 
+
       <section id="my-adventures" className="mt-5">
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <h2>Mis VisuAventuras</h2>
-        </div>
-        {[1, 2, 3].map(index => (
-          <div className="col-6 mb-4" key={index}>
-            <div className="p-5 rounded bg-secondary-subtle text-center">
-              <i className="fa-solid fa-image fs-1"></i>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h2>Mis VisuAventuras</h2>
+            </div>
+            {[1, 2, 3].map(index => (
+              <div className="col-6 mb-4" key={index}>
+                <div className="p-5 rounded bg-secondary-subtle text-center">
+                  <i className="fa fa-image fs-1"></i>
+                </div>
+              </div>
+            ))}
+            <div className="col-6 mb-4">
+              <a href="#" className="text-black">
+                <div className="p-5 rounded bg-secondary-subtle text-center">
+                  <i className="fa fa-circle-plus fs-1"></i>
+                </div>
+              </a>
+            </div>
+            <div className="col-12">
+              <a href="#" className="btn btn-secondary rounded-pill w-100">
+                Tu próximo Visu <i className="fa fa-arrow-right"></i>
+              </a>
             </div>
           </div>
-        ))}
-        <div className="col-6 mb-4">
-          <a href="#" className="text-black">
-            <div className="p-5 rounded bg-secondary-subtle text-center">
-              <i className="fa-solid fa-circle-plus fs-1"></i>
-            </div>
-          </a>
         </div>
-        <div className="col-12">
-          <a href="#" className="btn btn-secondary rounded-pill w-100">
-            Tu próximo Visu <i className="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-      {/* Footer */}
+      </section>
+
       <div className="container">
         <footer className="py-5">
           {/* Contenido del footer */}
@@ -116,5 +112,5 @@ function HomePage() {
     </div>
   );
 }
- 
+
 export default HomePage;
