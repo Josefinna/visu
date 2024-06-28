@@ -19,8 +19,8 @@ body {
   }
   
   /* Header and Navigation */
-  header {
-    background-color: #e9ecef;
+  .navbar {
+    background-color: #9542FF;
   }
   
   .navbar-brand img {

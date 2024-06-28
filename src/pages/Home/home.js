@@ -3,23 +3,25 @@ import { Link } from 'react-router-dom';
 import './home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import logo from '../../images/logo_dise.png'; // Tell webpack this JS file uses this image
+
 
 function HomePage() {
   return (
     <div>
       <header className="mb-4">
-        <nav className="navbar navbar-expand-lg bg-secondary-subtle">
+        <nav className="navbar">
           <div className="container-fluid">
             <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
               <i className="fa-solid fa-bars"></i>
             </button>
-            <Link className="navbar-brand d-inline-block w-25" to="/"><img src="images/logo_dise.png" className="w-100" alt="Logo" /></Link>
+            <Link className="navbar-brand d-inline-block w-25" to="/"><img src={logo} alt="Logo" /></Link>
             <div className="rounded-circle bg-secondary p-3">
-              <Link to="/perfil-user"><i className="fa-solid fa-user text-white"></i></Link>
+              <Link to="/perfil"><i className="fa-solid fa-user text-white"></i></Link>
             </div>
             <div className="offcanvas offcanvas-start" id="offcanvas-navbar">
               <div className="offcanvas-header p-3">
-                <Link className="navbar-brand d-inline-block w-25" to="/"><img src="images/logo_dise.png" className="w-100" alt="Logo" /></Link>
+                <Link className="navbar-brand d-inline-block w-25" to="/"><img src={logo} alt="Logo" /></Link>
                 <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 p-3">

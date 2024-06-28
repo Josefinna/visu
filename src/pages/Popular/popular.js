@@ -1,6 +1,8 @@
 // src/Popular/popular.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './popular.css';
+import logo from '../../images/logo_dise.png';
 
 function Popular() {
   return (
@@ -11,18 +13,18 @@ function Popular() {
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
       {/* Encabezado */}
       <header className="mb-4">
-        <nav className="navbar navbar-expand-lg bg-secondary-subtle">
+        <nav className="navbar">
           <div className="container-fluid">
             <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
               <i className="fa fa-bars"></i>
             </button>
-            <a className="navbar-brand d-inline-block w-25" href="#"><img src="images/logo_dise.png" className="w-100" alt="Logo" /></a>
+            <Link className="navbar-brand d-inline-block w-25" to="/"><img src={logo} alt="Logo" /></Link>
             <div className="rounded-circle bg-secondary p-3">
-              <i className="fa fa-user text-white"></i>
+              <Link to="/perfil"><i className="fa-solid fa-user text-white"></i></Link>
             </div>
             <div className="offcanvas offcanvas-start" id="offcanvas-navbar">
               <div className="offcanvas-header p-3">
-                <a className="navbar-brand d-inline-block w-25" href="#"><img src="images/logo_dise.png" className="w-100" alt="Logo" /></a>
+                <a className="navbar-brand d-inline-block w-25" href="#"><img src={logo} alt="Logo" /></a>
                 <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 p-3">

@@ -1,0 +1,3 @@
+.accordion-item:first-of-type>.accordion-header .accordion-button{
+    border-radius: 0!important;
+}

@@ -1,0 +1,11 @@
+.quiz{
+    height: 100vh;
+    background: url(../../images/fondo-quiz.jpg);
+}
+.new-adventure{
+    bottom: 40%;
+    text-align: center;
+}
+.scan{
+    bottom: 10%;
+}

@@ -5,6 +5,10 @@ import './App.css';
 
 // Importa el componente Popular
 import Popular from '../Popular/popular';
+// Importa el componente Popular
+import Quiz from '../Quiz/quiz';
+import Quiz_question from '../Quiz/quiz-question';
+import Perfil from '../Home/perfil';
 // Importa la página principal (HomePage)
 import HomePage from '../Home/home';
 
@@ -23,10 +27,15 @@ function App() {
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
+        
+
         {/* Routes para manejar las rutas */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/popular" element={<Popular />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz-question" element={<Quiz_question />} />
+          <Route path="/perfil" element={<Perfil />} />
           {/* Otras rutas */}
         </Routes>
       </div>
