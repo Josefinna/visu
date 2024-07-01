@@ -3,9 +3,23 @@
     background: url(../../images/fondo-quiz.jpg);
 }
 .new-adventure{
-    bottom: 40%;
+    bottom: 30%;
     text-align: center;
+    color: #414141;
+    font-size:large;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
 }
 .scan{
     bottom: 10%;
+}
+.btn-left{
+    color: #930101;
+    font-size: small !important;
+}
+.btn-right{
+    background-color:#9542FF !important;
+    color: white !important;
+    font-weight: bold !important;
 }

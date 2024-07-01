@@ -1,0 +1,23 @@
+.pregunta{
+    text-align: left;
+    margin-left: 4%;
+    margin-bottom: 6px;
+}
+.btn-left {
+    color: #9542FF !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 30.5px !important;
+    border: 1px solid #9542FF !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option-one{
+    text-align: left;
+}
+.option-two{
+    text-align: left;
+}
+.botones{
+}

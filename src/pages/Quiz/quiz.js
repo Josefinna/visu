@@ -8,21 +8,23 @@ function Quiz() {
         <section id="content" class="quiz position-relative">
         <div class="container">
             <div class="row ">
-                <div class="col-12 text-start mt-5">
+                {/* <div class="col-12 text-start mt-5">
                  volver al inicio
-                </div>
+                </div> */}
                 <div class="col-12 position-absolute new-adventure" >
                     <p>¿Quieres comenzar tu nueva aventura de souvenirs?</p>
                 </div>
                 <div class="botones position-absolute scan" >
                     <div class="row">
-                        <div class="col-6">
-                            <Link to="/quiz-question" className="btn btn-secondary rounded-pill w-100">
-                                 Scan it <i className="fa-solid fa-arrow-right"></i>
+                        <div class="vuelta col-6">
+                            <Link to="/" className="btn btn-left rounded-pill w-100">
+                                 En otro momento
                              </Link>
                         </div>
-                        <div class="col-6">
-                            <button type="button" class="btn btn-light rounded-pill w-100">Compartir <i class="fa-solid fa-share-nodes"></i></button>
+                        <div class="vamos col-6">
+                            <Link to="/quiz-question" className="btn btn-right btn-secondary rounded-pill w-100">
+                                    Vamos! <i class="fa-solid fa-arrow-right icon-margin"></i>
+                             </Link>
                         </div>
                     </div>
                 </div>

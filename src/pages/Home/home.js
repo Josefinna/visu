@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import './home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import Carousel from 'react-bootstrap/Carousel';
 import logo from '../../images/logo_dise.png'; // Tell webpack this JS file uses this image
+import { Carousel } from 'react-bootstrap';
 
 
 function HomePage() {
@@ -119,19 +121,8 @@ function HomePage() {
             <div className="col-12">
               <h2>Populares</h2>
             </div>
-            <div className="col-12">
-              <div className="owl-carousel owl-pop">
-                {[...Array(12)].map((_, index) => (
-                  <div className="item" key={index}>
-                    <Link to="/popular" className="text-black">
-                      <div className="p-5 rounded bg-secondary-subtle text-center">
-                        <i className="fa-solid fa-image fs-1"></i>
-                      </div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
+           {/* agregar "carousel" con imágenes*/}
+        
           </div>
         </div>
       </section>
